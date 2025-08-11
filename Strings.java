@@ -150,28 +150,51 @@
 //     }
 // }
 
-public class Strings{
+// public class Strings{
 
-    public static void compression(String str){
-        StringBuilder sc=new StringBuilder("");
+//     public static void compression(String str){
+//         StringBuilder sc=new StringBuilder("");
         
-        for(int i=1;i<str.length();i++){
-            int count=1;
-            while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
-                count++;
-                i++;
+//         for(int i=1;i<str.length();i++){
+//             int count=1;
+//             while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
+//                 count++;
+//                 i++;
 
-            }
-             sc.append(str.charAt(i));
-            if(count>1){
-                sc.append(count);
-            }
-        }
-        System.out.println(sc.toString());
+//             }
+//              sc.append(str.charAt(i));
+//             if(count>1){
+//                 sc.append(count);
+//             }
+//         }
+//         System.out.println(sc.toString());
 
+//     }
+//     public static void main(String args[]){
+//         String str=" aaaaaavbbbggfddee";
+//         compression(str);
+//     }
+// }
+
+
+class vehical{
+    void speed(){
+        System.out.println("The speed of top most car is more than your thinking");
     }
+
+}
+
+class car extends vehical{
+    void speed(){
+        System.out.println("speed is in our range");
+    }
+}
+public class Strings{
     public static void main(String args[]){
-        String str=" aaaaaavbbbggfddee";
-        compression(str);
+        vehical obj1=new car();
+        obj1.speed();
+        vehical obj2=new vehical();
+        obj2.speed();
+        
     }
 }
