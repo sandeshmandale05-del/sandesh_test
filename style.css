@@ -1,0 +1,30 @@
+#hero{
+    background-color: rgb(68, 53, 36);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.col ul{
+    overflow: auto;
+    
+}
+.col li{
+    
+  list-style-type: none;
+  float: left;
+  margin: 10px 40px;
+  
+
+}
+.col li a:hover{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    background-color: rgb(11, 11, 34);
+}
+#search{
+   border-radius: 14px;
+    color: cadetblue;
+    padding:10px 10px;
+    float: right;
+    width: 180px;
+}
