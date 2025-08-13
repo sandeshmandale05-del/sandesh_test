@@ -32,3 +32,15 @@
 .alpha{
     padding: 20px 20px;
 }
+.ANIM{
+    line-height: normal;
+    border-width: 0cap;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+img{
+   border-radius: 10px;
+}
