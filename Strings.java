@@ -177,24 +177,47 @@
 // }
 
 
-class vehical{
-    void speed(){
-        System.out.println("The speed of top most car is more than your thinking");
-    }
+// class vehical{
+//     void speed(){
+//         System.out.println("The speed of top most car is more than your thinking");
+//     }
 
+// }
+
+// class car extends vehical{
+//     void speed(){
+//         System.out.println("speed is in our range");
+//     }
+// }
+// public class Strings{
+//     public static void main(String args[]){
+//         vehical obj1=new car();
+//         obj1.speed();
+//         vehical obj2=new vehical();
+//         obj2.speed();
+        
+//     }
+// }
+
+
+abstract class Animal{
+    abstract void speed();
+
+    void living(){
+        System.out.println("with the people");
+    }
 }
 
-class car extends vehical{
+class Horse extends Animal{
     void speed(){
-        System.out.println("speed is in our range");
+        System.out.println("more than 180km/s");
     }
 }
 public class Strings{
-    public static void main(String args[]){
-        vehical obj1=new car();
-        obj1.speed();
-        vehical obj2=new vehical();
-        obj2.speed();
-        
+    public static void main (String args[]){
+        System.out.println("Hello Sandesh this side");
+        Horse hr=new Horse();
+        hr.living();
+        hr.speed();
     }
 }
